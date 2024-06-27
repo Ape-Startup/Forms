@@ -1,0 +1,133 @@
+body {
+    background-image: url('/img/fundo.svg');
+    background-size: cover;
+    font-family: "Urbanist", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: -1px 11px 9.1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: #d9b88f;
+    height: 200px;
+}
+
+.title {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.title h2 {
+    color: #460201;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+label {
+    position: relative;
+    font-size: 20px;
+    font-family: Urbanist;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    height: 36px;
+}
+
+
+footer {
+    background-color: #460201;
+    width: 100%; 
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Remova o espaçamento entre container e footer */
+    position: absolute;
+    bottom: 0;
+}
+
+footer h2 {
+    font-size: 18px;
+    color: #f8f8f8;
+    font-weight: 300;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza o conteúdo da row */
+    align-items: center;
+    gap: 20px;
+}
+
+.smile {
+    height: 70px;
+}
+
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .title h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+    
+    footer h2 {
+        font-size: 16px;
+    }
+
+    .footer-row {
+        flex-direction: column; /* Altera a direção para coluna */
+        gap: 10px; /* Ajusta o espaço entre os elementos */
+    }
+
+    .footer-row img {
+        width: 80%; /* Ajusta a largura da imagem */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .title h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    footer h2 {
+        font-size: 14px;
+    }
+
+    .footer-row {
+        flex-direction: column; /* Altera a direção para coluna */
+    }
+
+    .footer-row img {
+        width: 30%; /* Ajusta a largura da imagem */
+    }
+
+}
