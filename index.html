@@ -11,95 +11,86 @@
 </head>
 <body>
     <div class="container">
-
         <div class="title">
-                <h2>Questionário de avaliação</h2>
+            <h2>Questionário de avaliação</h2>
         </div>
-
         <div class="form">
-
-            <form id="evaluation-form">
-            <div class="form-container">
-
+            <form id="evaluation-form1">
+                <div class="form-container">
                     <label>O restaurante ou evento supriu suas expectativas?</label>
-                <div class="container-checkbox">
-                    <div class="checkbox">
-                        <input type="checkbox" id="expectativas-sim" name="expectativas" value="sim">
-                        <label for="expectativas-sim">Sim 👍</label> 
+                    <div class="container-checkbox" id="expectativas">
+                        <div class="checkbox">
+                            <input type="radio" id="expectativas-sim" name="expectativas" value="sim">
+                            <label for="expectativas-sim">Sim 👍</label> 
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="expectativas-nao" name="expectativas" value="não">
+                            <label for="expectativas-nao">Não 👎</label> 
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="expectativas-nao" name="expectativas" value="não">
-                        <label for="expectativas-nao">Não 👎</label> 
-                    </div>
-                    
-                </div>
-    
-                <label>De 1 a 5 qual a nota você dá ao restaurante ou evento?</label>
-                <div class="container-checkbox">
-                    <div class="checkbox">
-                        <input type="checkbox" id="nota-1" name="nota" value="1">
-                        <label for="nota-1">1 - Muito ruim 😡</label> 
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="nota-2" name="nota" value="2">
-                        <label for="nota-2">2 - Ruim 😠</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="nota-3" name="nota" value="3">
-                        <label for="nota-3">3 - Neutro 😐</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="nota-4" name="nota" value="4">
-                        <label for="nota-4">4 - Bom 😊</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="nota-5" name="nota" value="5">
-                        <label for="nota-5">5 - Amei 🥰</label>
-                    </div>
-                    
-                </div>
-    
-                <label>Você iria novamente no evento ou restaurante que visitou?</label>
-                <div class="container-checkbox">
-                    <div class="checkbox">
-                        <input type="checkbox" id="novamente-sim" name="novamente" value="sim">
-                        <label for="novamente-sim">Sim 👍</label> 
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="novamente-nao" name="novamente" value="não">
-                        <label for="novamente-nao">Não 👎</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="novamente-talvez" name="novamente" value="talvez">
-                        <label for="novamente-talvez">Talvez 😐</label>
-                    </div>
-                    
-                </div>
-    
-                <label>Você recomendaria o evento ou restaurante que visitou aos seus amigos e familiares?</label>
-                <div class="container-checkbox">
-                    <div class="checkbox">
-                        <input type="checkbox" id="recomendaria-sim" name="recomendaria" value="sim">
-                        <label for="recomendaria-sim">Sim 👍</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="recomendaria-nao" name="recomendaria" value="não">
-                        <label for="recomendaria-nao">Não 👎</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="recomendaria-talvez" name="recomendaria" value="talvez">
-                        <label for="recomendaria-talvez">Talvez 😐 </label>
-                    </div>                    
-                    
-                </div>
 
-            </div>
+                    <label>De 1 a 5 qual a nota você dá ao restaurante ou evento?</label>
+                    <div class="container-checkbox" id="nota">
+                        <div class="checkbox">
+                            <input type="radio" id="nota-1" name="nota" value="1">
+                            <label for="nota-1">1 - Muito ruim 😡</label> 
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="nota-2" name="nota" value="2">
+                            <label for="nota-2">2 - Ruim 😠</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="nota-3" name="nota" value="3">
+                            <label for="nota-3">3 - Neutro 😐</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="nota-4" name="nota" value="4">
+                            <label for="nota-4">4 - Bom 😊</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="nota-5" name="nota" value="5">
+                            <label for="nota-5">5 - Amei 🥰</label>
+                        </div>
+                    </div>
+
+                    <label>Você iria novamente no evento ou restaurante que visitou?</label>
+                    <div class="container-checkbox" id="novamente">
+                        <div class="checkbox">
+                            <input type="radio" id="novamente-sim" name="novamente" value="sim">
+                            <label for="novamente-sim">Sim 👍</label> 
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="novamente-nao" name="novamente" value="não">
+                            <label for="novamente-nao">Não 👎</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="novamente-talvez" name="novamente" value="talvez">
+                            <label for="novamente-talvez">Talvez 😐</label>
+                        </div>
+                    </div>
+
+                    <label>Você recomendaria o evento ou restaurante que visitou aos seus amigos e familiares?</label>
+                    <div class="container-checkbox" id="recomendaria1">
+                        <div class="checkbox">
+                            <input type="radio" id="recomendaria1-sim" name="recomendaria" value="sim">
+                            <label for="recomendaria1-sim">Sim 👍</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="recomendaria1-nao" name="recomendaria" value="não">
+                            <label for="recomendaria1-nao">Não 👎</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="recomendaria1-talvez" name="recomendaria" value="talvez">
+                            <label for="recomendaria1-talvez">Talvez 😐</label>
+                        </div>
+                    </div>
+                </div>
+                <a href="avaliacao.html">
+                  <button type="button" onclick="">Continuar</button>  
+                </a>
                 
-    
-                <button type="submit">Continuar</button>
             </form>
         </div>
-        
     </div>
     <footer>
         <div class="footer-row">
